@@ -7,7 +7,7 @@ use File::Fetch;
 use Scalar::Util qw(blessed);
 use File::Temp qw/tempdir/;
 
-use Class::C3;
+use MRO::Compat;
 
 use base qw/Catalyst::Plugin::ConfigLoader/;
 
@@ -21,7 +21,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
